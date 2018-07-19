@@ -21,7 +21,7 @@ class ToDo extends React.Component{
             </View>
                 { isEditing ? (
                     <View style={styles.actions}>
-                        <TouchableOpacity onPressOut={this._finishEditing}>
+                        <TouchableOpacity onPress={this._finishEditing}>
                             <View style={styles.actionContainer}>
                                 <Text style={styles.actionText}>✔</Text>
                             </View>
@@ -29,7 +29,7 @@ class ToDo extends React.Component{
                     </View>
                 ):(
                     <View style={styles.actions}>
-                        <TouchableOpacity onPressOut={this._startEditing}>
+                        <TouchableOpacity onPress={this._startEditing}>
                             <View style={styles.actionContainer}>
                                 <Text style={styles.actionText}>🔨</Text>
                             </View>
